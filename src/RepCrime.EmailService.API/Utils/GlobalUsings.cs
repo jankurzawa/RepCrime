@@ -1,0 +1,17 @@
+﻿global using Azure.Extensions.AspNetCore.Configuration.Secrets;
+global using Azure.Identity;
+global using Azure.Security.KeyVault.Secrets;
+global using Azure.Storage.Queues;
+global using ERepCrime.EmailService.API.Services;
+global using MailKit.Net.Smtp;
+global using MimeKit;
+global using Newtonsoft.Json;
+global using RabbitMQ.Client.Events;
+global using RabbitMQ.Client;
+global using RepCrime.Common.DTOs.Crime;
+global using RepCrime.Common.Exceptions;
+global using RepCrime.Common.MiddleWares;
+global using RepCrime.EmailService.API.BackGroundServices;
+global using RepCrime.EmailService.API.Extentions;
+global using RepCrime.EmailService.API.Services;
+global using System.Text;

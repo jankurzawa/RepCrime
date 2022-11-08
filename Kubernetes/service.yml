@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: crime-service
+spec:
+  selector:
+    app: crime-pod
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: emailservice-service
+spec:
+  selector:
+    app: emailservice-pod
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: lawenforcement-service
+spec:
+  selector:
+    app: lawenforcement-pod
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mvc-service
+spec:
+  selector:
+    app: mvc-pod
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer

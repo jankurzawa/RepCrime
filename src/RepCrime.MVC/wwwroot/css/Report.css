@@ -1,0 +1,14 @@
+﻿.row{
+    justify-content: center;
+}
+input {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}
+select {
+    width: 100%;
+}

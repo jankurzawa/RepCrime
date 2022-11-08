@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crime-deployment
+spec:
+  selector:
+    matchLabels:
+      app: crime-pod
+  template:
+    metadata:
+      labels:
+        app: crime-pod
+    spec:
+      containers:
+      - name: crime-container
+        image: repcrimecontainerregistry.azurecr.io/repcrime.crime.api:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        env:
+        - name: "ASPNETCORE_ENVIRONMENT"
+          value: "K8s"
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emailservice-deployment
+spec:
+  selector:
+    matchLabels:
+      app: emailservice-pod
+  template:
+    metadata:
+      labels:
+        app: emailservice-pod
+    spec:
+      containers:
+      - name: emailservice-container
+        image: repcrimecontainerregistry.azurecr.io/repcrime.emailservice.api:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lawenforcement-deployment
+spec:
+  selector:
+    matchLabels:
+      app: lawenforcement-pod
+  template:
+    metadata:
+      labels:
+        app: lawenforcement-pod
+    spec:
+      containers:
+      - name: lawenforcement-container
+        image: repcrimecontainerregistry.azurecr.io/repcrime.lawenforcement.api:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mvc-deployment
+spec:
+  selector:
+    matchLabels:
+      app: mvc-pod
+  template:
+    metadata:
+      labels:
+        app: mvc-pod
+    spec:
+      containers:
+      - name: mvc-container
+        image: repcrimecontainerregistry.azurecr.io/repcrime.mvc:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        env:
+        - name: "ASPNETCORE_ENVIRONMENT"
+          value: "K8s"

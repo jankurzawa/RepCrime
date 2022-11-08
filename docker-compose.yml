@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  repcrime.mvc:
+    image: ${DOCKER_REGISTRY-}repcrimemvc
+    build:
+      context: .
+      dockerfile: src/RepCrime.MVC/Dockerfile
+
+
+  repcrime.crime.api:
+    image: ${DOCKER_REGISTRY-}repcrimecrimeapi
+    build:
+      context: .
+      dockerfile: src/RepCrime.Crime.API/Dockerfile
+
+  repcrime.emailservice.api:
+    image: ${DOCKER_REGISTRY-}repcrimeemailserviceapi
+    build:
+      context: .
+      dockerfile: src/RepCrime.EmailService.API/Dockerfile
+
+  repcrime.lawenforcement.api:
+    image: ${DOCKER_REGISTRY-}repcrimelawenforcementapi
+    build:
+      context: .
+      dockerfile: src/RepCrime.LawEnforcement.API/Dockerfile

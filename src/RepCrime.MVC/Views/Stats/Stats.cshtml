@@ -1,0 +1,10 @@
+﻿@model RepCrime.MVC.Models.StatsViewModel
+@{
+    ViewData["Title"] = "Statistics";
+}
+<head>
+    <link rel="stylesheet" href="~/css/Statistics.css" asp-append-version="true" />
+</head>
+
+<h1>Daily average of reported events: @Model.DailyAverageOfReportedCrimes</h1>
+<h1>Number of all reported evets: @Model.TotalReportedCrimes</h1>

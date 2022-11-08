@@ -1,0 +1,38 @@
+﻿@model RepCrime.Common.DTOs.Crime.CreateCrimeDTO
+@{
+    ViewData["Title"] = "Report";
+}
+<head>
+    <link rel="stylesheet" href="~/css/Report.css" asp-append-version="true" />
+</head>
+
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm("AddNew", "Report", FormMethod.Post))
+        {
+			<p>
+                <label id="address" for="Address">Address</label>
+                @Html.TextBoxFor(model=>model.Address)
+            </p>
+			<p>
+                <label id="type" for="Type">Type</label>
+                @Html.DropDownListFor(m => m.Type, new SelectList(Enum.GetValues(typeof(RepCrime.Common.DTOs.Crime.CrimeType))), "--Select Type--", new { style="font-size:120%;"})
+            </p>
+			<p>
+                <label id="description" for="Description">Description</label>
+                @Html.TextAreaFor(model => model.Description, new { @rows = 5})
+            </p>
+            <p>
+                <label id="date" for="Date">Date</label>
+                @Html.EditorFor(x => x.Date, "{0:dd/MM/yyyy}", new { htmlAttributes = new { @min= "1900-01-01", @max= DateTime.Today.ToString("yyyy'-'MM'-'dd")}})
+            </p>
+            <p>
+                <label id="email" for="Email">Email</label>
+                @Html.TextBoxFor(model => model.Email)
+            </p>
+            <div class= "buttons">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        }
+    </div>
+</div>

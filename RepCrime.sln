@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepCrime.Crime.API", "src\RepCrime.Crime.API\RepCrime.Crime.API.csproj", "{F6E2524D-60EA-4328-9A1F-0AA405AC5091}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepCrime.LawEnforcement.API", "src\RepCrime.LawEnforcement.API\RepCrime.LawEnforcement.API.csproj", "{75C371B6-78DE-4257-A82D-0DE73AA16BF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepCrime.EmailService.API", "src\RepCrime.EmailService.API\RepCrime.EmailService.API.csproj", "{2E47FA7A-7680-4681-9936-4FAE6B734364}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepCrime.MVC", "src\RepCrime.MVC\RepCrime.MVC.csproj", "{5B0583F0-73B0-4342-A005-E4732CC1E8FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crime", "Crime", "{710F41AF-18FE-4EBF-A1E4-A294422EEC59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Email", "Email", "{51A2D941-1AAE-4539-B90C-D091281ED82D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LawEnforcement", "LawEnforcement", "{2718CDB9-9752-419A-85F1-F74F65089B76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{ABC49F46-0A53-4A54-BB96-C88FD8D5947B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepCrime.LawEnforcement.DATA", "src\RepCrime.LawEnforcement.DATA\RepCrime.LawEnforcement.DATA.csproj", "{6F8BA401-2A91-4EA0-AD29-726391AF1475}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BC321A71-FC2D-4CD6-B033-0C75CF646A8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepCrime.Common", "src\RepCrime.Common\RepCrime.Common.csproj", "{8C416292-A50B-4E9F-AD9F-9CA033AF8C56}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E12CE453-FD9B-4B51-8353-BD53F7194A82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernetes", "Kubernetes", "{3664AAD8-C1E6-4C44-949D-771E59CA5FD8}"
+	ProjectSection(SolutionItems) = preProject
+		Kubernetes\deployment.yml = Kubernetes\deployment.yml
+		Kubernetes\service.yml = Kubernetes\service.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6E2524D-60EA-4328-9A1F-0AA405AC5091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E2524D-60EA-4328-9A1F-0AA405AC5091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E2524D-60EA-4328-9A1F-0AA405AC5091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E2524D-60EA-4328-9A1F-0AA405AC5091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C371B6-78DE-4257-A82D-0DE73AA16BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C371B6-78DE-4257-A82D-0DE73AA16BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C371B6-78DE-4257-A82D-0DE73AA16BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C371B6-78DE-4257-A82D-0DE73AA16BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E47FA7A-7680-4681-9936-4FAE6B734364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E47FA7A-7680-4681-9936-4FAE6B734364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E47FA7A-7680-4681-9936-4FAE6B734364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E47FA7A-7680-4681-9936-4FAE6B734364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0583F0-73B0-4342-A005-E4732CC1E8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0583F0-73B0-4342-A005-E4732CC1E8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0583F0-73B0-4342-A005-E4732CC1E8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0583F0-73B0-4342-A005-E4732CC1E8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F8BA401-2A91-4EA0-AD29-726391AF1475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8BA401-2A91-4EA0-AD29-726391AF1475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8BA401-2A91-4EA0-AD29-726391AF1475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8BA401-2A91-4EA0-AD29-726391AF1475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C416292-A50B-4E9F-AD9F-9CA033AF8C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C416292-A50B-4E9F-AD9F-9CA033AF8C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C416292-A50B-4E9F-AD9F-9CA033AF8C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C416292-A50B-4E9F-AD9F-9CA033AF8C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E12CE453-FD9B-4B51-8353-BD53F7194A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E12CE453-FD9B-4B51-8353-BD53F7194A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E12CE453-FD9B-4B51-8353-BD53F7194A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E12CE453-FD9B-4B51-8353-BD53F7194A82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6E2524D-60EA-4328-9A1F-0AA405AC5091} = {710F41AF-18FE-4EBF-A1E4-A294422EEC59}
+		{75C371B6-78DE-4257-A82D-0DE73AA16BF9} = {2718CDB9-9752-419A-85F1-F74F65089B76}
+		{2E47FA7A-7680-4681-9936-4FAE6B734364} = {51A2D941-1AAE-4539-B90C-D091281ED82D}
+		{5B0583F0-73B0-4342-A005-E4732CC1E8FA} = {ABC49F46-0A53-4A54-BB96-C88FD8D5947B}
+		{6F8BA401-2A91-4EA0-AD29-726391AF1475} = {2718CDB9-9752-419A-85F1-F74F65089B76}
+		{8C416292-A50B-4E9F-AD9F-9CA033AF8C56} = {BC321A71-FC2D-4CD6-B033-0C75CF646A8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93812266-8621-4A88-8937-ED3D49AD0C9A}
+	EndGlobalSection
+EndGlobal

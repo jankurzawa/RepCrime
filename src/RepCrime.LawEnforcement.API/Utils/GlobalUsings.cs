@@ -1,0 +1,13 @@
+﻿global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using RepCrime.Common.DTOs.Crime;
+global using RepCrime.Common.Exceptions;
+global using RepCrime.Common.MiddleWares;
+global using RepCrime.LawEnforcement.API.Extentions;
+global using RepCrime.LawEnforcement.DATA.Context;
+global using RepCrime.LawEnforcement.DATA.DAL.Intefaces;
+global using RepCrime.LawEnforcement.DATA.DAL;
+global using RepCrime.LawEnforcement.DATA.Models;
+global using Azure.Extensions.AspNetCore.Configuration.Secrets;
+global using Azure.Identity;
+global using Azure.Security.KeyVault.Secrets;
